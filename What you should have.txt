@@ -1,0 +1,13 @@
+What you should have
+5+ years of experience writing and designing backend systems.
+Experience solving complex distributed system problems.
+Experience operating systems handling 1M+ qps.
+Familiar with open source software, and not afraid to dig into the source code of a library to find the answer you’re looking for. 
+Comfortable making tradeoffs when leading projects to ensure constant progress.
+Bonus Points
+Experience with Rust or Python.
+Experience working with systems deployed in a cloud environment (GCP, AWS, etc.)
+Experience processing and manipulating media.
+Knowledge of devops tools like Salt or Terraform.
+Open source project contributions.
+You are a Discord power user and have built bots or apps interacting with our platform.
