@@ -1,2 +1,31 @@
-<html><head><style type="text/css"></style> <link rel="stylesheet" href="style.css"></head><body><iframe src="https://deadsimplechat.com/Gl1OFP5Ci" width="100%" height="660px"></iframe>
+<html><head><style type="text/css"></style> <link rel="stylesheet" href="style.css"><style type="text/css"></style></head><body>    <script src="https://cdn.deadsimplechat.com/sdk/1.0/dschatsdk.min.js"></script><iframe id="chat" src="https://deadsimplechat.com/Gl1OFP5Ci" width="100%" height="660px"></iframe><script>(async () => {
+    // DSChatSDK construction accepts two parameters:
+    // 1. Chat Room Id
+    // 2. ID of the iFrame tag
+    // 3. Dead Simple Chat Public API Key.
+    const sdk = new DSChatSDK("Gl1OFP5Ci", "chat", "ub_3456596e7a65366b4c48637a693472424663373457776f6f5f416d546f712d52744d6232686f46305535594b4c2d647a")
+    // Call the connect method to connect the SDK to the Chat iFrame.
+    await sdk.connect();
+});
+
+    /**
+     * Listening to Message Event. 
+     * This is triggered Each Time a message arrives in the chat room
+     */
+    sdk.on("message", (message) => {
+        console.log("New Message Arrived", message);
+    });
+
+    /**
+     * Calling the Join Method to Join the Chat Room
+     */
+    sdk.join({
+        username: "John"
+    });
+
+    /**
+     * Sending a message in the chat room.
+     */
+    sdk.sendMessage("Hello World");</script>
+<div id="pt-ext-root"></div>
 <div id="pt-ext-root"></div></body></html>
